@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF"
+    android:background="#101E1F"
     tools:context="com.example.taskManagement.AddEditTaskActivity">
 
     <EditText
@@ -18,8 +18,8 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:hint="Enter New Task"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="#00DBEE"
+        android:textColorHint="#00DBEE" />
 
     <EditText
         android:id="@+id/idEditTaskDescription"
@@ -35,8 +35,8 @@
         android:hint="Enter Description"
         android:inputType="textMultiLine"
         android:singleLine="false"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="#00dbee"
+        android:textColorHint="#00dbee" />
 
     <EditText
         android:id="@+id/idEditTaskPriority"
@@ -50,8 +50,8 @@
         android:layout_marginBottom="10dp"
         android:gravity="start|top"
         android:hint="Enter Priority"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="#00dbee"
+        android:textColorHint="#00dbee" />
 
     <EditText
         android:id="@+id/idEditTaskDueDate"
@@ -65,8 +65,8 @@
         android:layout_marginBottom="314dp"
         android:gravity="start|top"
         android:hint="Enter Due Date"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="#00dbee"
+        android:textColorHint="#00dbee" />
 
     <Button
         android:id="@+id/idBtnAddUpdate"
@@ -78,7 +78,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="113dp"
         android:layout_marginBottom="36dp"
-        android:backgroundTint="#FFC107"
+        android:backgroundTint="#004f56"
         android:text="Button"
         android:textAllCaps="false"
         android:textColor="#FFFFFF"
