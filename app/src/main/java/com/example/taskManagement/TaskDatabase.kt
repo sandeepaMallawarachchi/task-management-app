@@ -1,4 +1,4 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import android.content.Context
 import androidx.room.Database
@@ -14,7 +14,7 @@ abstract class TaskDatabase :RoomDatabase(){
         @Volatile
         private var INSTANCE: TaskDatabase? = null
 
-        fun getDatabase(context: Context): TaskDatabase{
+        fun getDatabase(context: Context): TaskDatabase {
             return INSTANCE ?: synchronized(this){
                 val instance = Room.databaseBuilder(
                     context.applicationContext,

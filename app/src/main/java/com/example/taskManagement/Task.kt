@@ -1,4 +1,4 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity

@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#FFC107"
-    tools:context=".AddEditTaskActivity">
+    android:background="#EDEDED"
+    tools:context="com.example.taskManagement.AddEditTaskActivity">
 
     <EditText
         android:id="@+id/idEditTaskTitle"
@@ -18,8 +18,8 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:hint="Enter Task Title"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/idEditTaskDescription"
@@ -35,8 +35,8 @@
         android:hint="Enter Task Description"
         android:inputType="textMultiLine"
         android:singleLine="false"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/idEditTaskPriority"
@@ -50,8 +50,8 @@
         android:layout_marginBottom="10dp"
         android:gravity="start|top"
         android:hint="Enter Task Priority"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/idEditTaskDueDate"
@@ -63,8 +63,8 @@
         android:layout_marginBottom="145dp"
         android:gravity="start|top"
         android:hint="Enter Task Due Date"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black" />
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/idBtnAddUpdate"

@@ -1,7 +1,8 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.taskManagement.Task
 
 @Dao
 interface TasksDao {

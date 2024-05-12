@@ -1,4 +1,4 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.taskappnew.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity(), TaskClickInterface, TaskClickDeleteInterface {
@@ -25,21 +26,22 @@ class MainActivity : AppCompatActivity(), TaskClickInterface, TaskClickDeleteInt
 
         val taskRVAdapter = TaskRVAdapter(this,this,this)
         tasksRV.adapter = taskRVAdapter
-        viewModel = ViewModelProvider(this,ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(TaskViewModel::class.java)
+        viewModel = ViewModelProvider(this,ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(
+            TaskViewModel::class.java)
         viewModel.allTasks.observe(this, Observer { list ->
             list?.let {
                 taskRVAdapter.updateList(it)
             }
         })
         addFAB.setOnClickListener {
-            val intent = Intent(this@MainActivity,AddEditTaskActivity::class.java)
+            val intent = Intent(this@MainActivity, AddEditTaskActivity::class.java)
             startActivity(intent)
             this.finish()
         }
     }
 
     override fun onTaskClick(task: Task) {
-        val intent = Intent(this@MainActivity,AddEditTaskActivity::class.java)
+        val intent = Intent(this@MainActivity, AddEditTaskActivity::class.java)
         intent.putExtra("taskType", "Edit" )
         intent.putExtra("taskTitle", task.taskTitle )
         intent.putExtra("taskDescription", task.taskDescription )

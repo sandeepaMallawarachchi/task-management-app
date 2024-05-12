@@ -1,9 +1,12 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import android.app.Application
 import androidx.lifecycle.viewModelScope
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import com.example.taskManagement.Task
+import com.example.taskManagement.TaskDatabase
+import com.example.taskManagement.TaskRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

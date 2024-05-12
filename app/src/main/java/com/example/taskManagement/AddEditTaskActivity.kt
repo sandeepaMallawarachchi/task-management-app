@@ -1,4 +1,4 @@
-package com.example.taskappnew
+package com.example.taskManagement
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
+import com.example.taskappnew.R
 import java.text.SimpleDateFormat
 import java.util.Date
 
@@ -27,7 +28,8 @@ class AddEditTaskActivity : AppCompatActivity() {
         taskPriorityEdt = findViewById(R.id.idEditTaskPriority)
         taskDueDateEdt = findViewById(R.id.idEditTaskDueDate)
         addupdateBtn = findViewById(R.id.idBtnAddUpdate)
-        viewModel = ViewModelProvider(this,ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(TaskViewModel::class.java)
+        viewModel = ViewModelProvider(this,ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(
+            TaskViewModel::class.java)
 
         val taskType = intent.getStringExtra("taskType")
         if(taskType.equals("Edit")){
@@ -68,7 +70,7 @@ class AddEditTaskActivity : AppCompatActivity() {
                     Toast.makeText(this, "Note Added..", Toast.LENGTH_LONG).show()
                 }
             }
-            startActivity(Intent(applicationContext,MainActivity::class.java))
+            startActivity(Intent(applicationContext, MainActivity::class.java))
             this.finish()
             }
         }
