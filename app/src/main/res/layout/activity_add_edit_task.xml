@@ -4,58 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="#FFC107"
     tools:context=".AddEditTaskActivity">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:id="@+id/idEditTaskTitle"
+        android:layout_width="392dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
         android:hint="Enter Task Title"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:layout_margin="10dp"/>
+        android:textColorHint="@color/black" />
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idEditTaskTitle"
         android:id="@+id/idEditTaskDescription"
-        android:hint="Enter Task Description"
-        android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:layout_margin="10dp"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:singleLine="false"/>
-    <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idEditTaskDescription"
+        android:layout_height="60dp"
+        android:layout_below="@id/idEditTaskTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="start|top"
+        android:hint="Enter Task Description"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
+
+    <EditText
         android:id="@+id/idEditTaskPriority"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/idEditTaskDescription"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="start|top"
         android:hint="Enter Task Priority"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:layout_margin="10dp"
-        android:gravity="start|top"/>
+        android:textColorHint="@color/black" />
+
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/idEditTaskPriority"
         android:id="@+id/idEditTaskDueDate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_above="@id/idBtnAddUpdate"
+        android:layout_below="@id/idEditTaskPriority"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="145dp"
+        android:gravity="start|top"
         android:hint="Enter Task Due Date"
         android:textColor="@color/black"
-        android:textColorHint="@color/black"
-        android:layout_margin="10dp"
-        android:gravity="start|top"
-        android:layout_above="@id/idBtnAddUpdate"/>
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/idBtnAddUpdate"
-        android:layout_margin="20dp"
-        android:layout_alignParentBottom="true"
-        android:text="Button"
-        android:textAllCaps="false" />
+        android:textColorHint="@color/black" />
 
+    <Button
+        android:id="@+id/idBtnAddUpdate"
+        android:layout_width="162dp"
+        android:layout_height="58dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="200dp"
+        android:backgroundTint="#FFC107"
+        android:text="Button"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>
