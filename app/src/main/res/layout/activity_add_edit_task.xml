@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#EDEDED"
+    android:background="#000000"
     tools:context="com.example.taskManagement.AddEditTaskActivity">
 
     <EditText
@@ -17,7 +17,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
-        android:hint="Enter Task Title"
+        android:hint="Enter New Task"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
@@ -32,7 +32,7 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:gravity="start|top"
-        android:hint="Enter Task Description"
+        android:hint="Enter Description"
         android:inputType="textMultiLine"
         android:singleLine="false"
         android:textColor="@color/white"
@@ -49,20 +49,22 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:gravity="start|top"
-        android:hint="Enter Task Priority"
+        android:hint="Enter Priority"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
     <EditText
         android:id="@+id/idEditTaskDueDate"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="388dp"
+        android:layout_height="63dp"
         android:layout_above="@id/idBtnAddUpdate"
         android:layout_below="@id/idEditTaskPriority"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="12dp"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="145dp"
+        android:layout_marginBottom="314dp"
         android:gravity="start|top"
-        android:hint="Enter Task Due Date"
+        android:hint="Enter Due Date"
         android:textColor="@color/white"
         android:textColorHint="@color/white" />
 
@@ -74,8 +76,8 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="125dp"
-        android:layout_marginBottom="200dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="36dp"
         android:backgroundTint="#FFC107"
         android:text="Button"
         android:textAllCaps="false"
