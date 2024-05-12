@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
+    android:background="#FFFFFF"
     tools:context="com.example.taskManagement.AddEditTaskActivity">
 
     <EditText
@@ -18,8 +18,8 @@
         android:layout_marginEnd="9dp"
         android:layout_marginBottom="10dp"
         android:hint="Enter New Task"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/idEditTaskDescription"
@@ -35,8 +35,8 @@
         android:hint="Enter Description"
         android:inputType="textMultiLine"
         android:singleLine="false"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/idEditTaskPriority"
@@ -50,8 +50,8 @@
         android:layout_marginBottom="10dp"
         android:gravity="start|top"
         android:hint="Enter Priority"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/idEditTaskDueDate"
@@ -65,8 +65,8 @@
         android:layout_marginBottom="314dp"
         android:gravity="start|top"
         android:hint="Enter Due Date"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white" />
+        android:textColor="@color/black"
+        android:textColorHint="@color/black" />
 
     <Button
         android:id="@+id/idBtnAddUpdate"
@@ -76,7 +76,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="120dp"
+        android:layout_marginEnd="113dp"
         android:layout_marginBottom="36dp"
         android:backgroundTint="#FFC107"
         android:text="Button"
