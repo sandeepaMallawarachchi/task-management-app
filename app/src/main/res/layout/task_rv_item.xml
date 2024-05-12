@@ -11,7 +11,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#FFEB3B">
+        android:background="#08750D">
 
         <TextView
             android:id="@+id/idTVTaskTitle"
@@ -23,8 +23,9 @@
             android:layout_marginBottom="4dp"
             android:layout_toLeftOf="@+id/idIVDelete"
             android:text="Task Title"
-            android:textColor="#4530b3"
-            android:textSize="18sp" />
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/idTVTimeStamp"
@@ -38,7 +39,7 @@
             android:layout_toLeftOf="@+id/idIVDelete"
             android:padding="4dp"
             android:text="TimeStamp"
-            android:textColor="#4530b3" />
+            android:textColor="#FFFFFF" />
 
         <ImageView
             android:id="@+id/idIVDelete"
@@ -53,7 +54,7 @@
             android:layout_marginBottom="5dp"
             android:padding="4dp"
             android:src="@drawable/baseline_delete_24"
-            app:tint="#4530b3" />
+            app:tint="#FFFFFF" />
 
 
     </RelativeLayout>
